@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+outputs/
+.DS_Store
+docs/
+.github
+neo4j-dumps/
+TODO.md
+DESIGN_DECISIONS.md

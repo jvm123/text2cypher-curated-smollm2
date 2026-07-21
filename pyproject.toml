@@ -1,0 +1,40 @@
+[project]
+name = "fraunhofer-iais-project"
+version = "0.1.0"
+description = "CPU fine-tuning and evaluation of SmolLM2 for text-to-Cypher generation."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate>=1.0.0",
+    "datasets>=3.0.0",
+    "huggingface-hub>=0.25.0",
+    "matplotlib>=3.9.0",
+    "neo4j>=5.0.0",
+    "torch==2.6.0",
+    "transformers>=4.45.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.uv]
+package = false
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["."]
+
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
