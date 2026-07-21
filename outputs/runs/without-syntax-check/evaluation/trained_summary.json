@@ -1,0 +1,31 @@
+{
+  "label": "trained",
+  "split": "test",
+  "database_reference_alias": "any",
+  "limit": null,
+  "num_samples": 50,
+  "generation": {
+    "max_new_tokens": 256,
+    "do_sample": false
+  },
+  "metrics": {
+    "exact_match": 0.28,
+    "token_precision": 0.8494342174015058,
+    "token_recall": 0.8451723372002948,
+    "token_f1": 0.8273355444006937
+  },
+  "failed_generations": 0,
+  "execution": {
+    "enabled": true,
+    "eligible_samples": 3,
+    "skipped_samples": 47,
+    "execution_errors": 0,
+    "equivalent_samples": 1,
+    "execution_accuracy": 0.3333333333333333,
+    "status_counts": {
+      "equivalent": 1,
+      "mismatch": 2,
+      "skipped": 47
+    }
+  }
+}

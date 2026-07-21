@@ -1,0 +1,1027 @@
+{
+  "metadata": {
+    "source_results": "outputs/runs/with-syntax-check-no-truncate/evaluation/trained_results.jsonl",
+    "num_samples": 9,
+    "analysis_scope": "offline lexical and static analysis; no Cypher parsing or execution equivalence"
+  },
+  "outcomes": {
+    "cypher_shaped_non_match": {
+      "count": 4,
+      "rate": 0.4444444444444444
+    },
+    "exact_lexical_match": {
+      "count": 5,
+      "rate": 0.5555555555555556
+    }
+  },
+  "lexical_overlap": {
+    "high_overlap": {
+      "count": 4,
+      "rate": 1.0
+    }
+  },
+  "error_types": {},
+  "by_database_reference_alias": {
+    "<unset>": {
+      "samples": 5,
+      "exact_lexical_matches": 4,
+      "exact_lexical_match_rate": 0.8,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 1,
+          "rate": 0.2
+        },
+        "exact_lexical_match": {
+          "count": 4,
+          "rate": 0.8
+        }
+      }
+    },
+    "neo4jlabs_demo_db_bluesky": {
+      "samples": 1,
+      "exact_lexical_matches": 1,
+      "exact_lexical_match_rate": 1.0,
+      "outcomes": {
+        "exact_lexical_match": {
+          "count": 1,
+          "rate": 1.0
+        }
+      }
+    },
+    "neo4jlabs_demo_db_buzzoverflow": {
+      "samples": 1,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 1,
+          "rate": 1.0
+        }
+      }
+    },
+    "neo4jlabs_demo_db_twitch": {
+      "samples": 2,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 2,
+          "rate": 1.0
+        }
+      }
+    }
+  },
+  "by_reference_complexity": {
+    "3": {
+      "samples": 1,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 1,
+          "rate": 1.0
+        }
+      }
+    },
+    "4": {
+      "samples": 1,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 1,
+          "rate": 1.0
+        }
+      }
+    },
+    "5": {
+      "samples": 4,
+      "exact_lexical_matches": 3,
+      "exact_lexical_match_rate": 0.75,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 1,
+          "rate": 0.25
+        },
+        "exact_lexical_match": {
+          "count": 3,
+          "rate": 0.75
+        }
+      }
+    },
+    "6": {
+      "samples": 1,
+      "exact_lexical_matches": 1,
+      "exact_lexical_match_rate": 1.0,
+      "outcomes": {
+        "exact_lexical_match": {
+          "count": 1,
+          "rate": 1.0
+        }
+      }
+    },
+    "9": {
+      "samples": 1,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 1,
+          "rate": 1.0
+        }
+      }
+    },
+    "10": {
+      "samples": 1,
+      "exact_lexical_matches": 1,
+      "exact_lexical_match_rate": 1.0,
+      "outcomes": {
+        "exact_lexical_match": {
+          "count": 1,
+          "rate": 1.0
+        }
+      }
+    }
+  },
+  "reference_feature_success": {
+    "aggregation": {
+      "samples": 2,
+      "exact_lexical_matches": 1,
+      "exact_lexical_match_rate": 0.5
+    },
+    "distinct": {
+      "samples": 2,
+      "exact_lexical_matches": 2,
+      "exact_lexical_match_rate": 1.0
+    },
+    "match": {
+      "samples": 9,
+      "exact_lexical_matches": 5,
+      "exact_lexical_match_rate": 0.5555555555555556
+    },
+    "node_label": {
+      "samples": 9,
+      "exact_lexical_matches": 5,
+      "exact_lexical_match_rate": 0.5555555555555556
+    },
+    "ordering": {
+      "samples": 1,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0
+    },
+    "pagination": {
+      "samples": 2,
+      "exact_lexical_matches": 1,
+      "exact_lexical_match_rate": 0.5
+    },
+    "property_filter": {
+      "samples": 6,
+      "exact_lexical_matches": 4,
+      "exact_lexical_match_rate": 0.6666666666666666
+    },
+    "relationship_pattern": {
+      "samples": 4,
+      "exact_lexical_matches": 2,
+      "exact_lexical_match_rate": 0.5
+    },
+    "return": {
+      "samples": 9,
+      "exact_lexical_matches": 5,
+      "exact_lexical_match_rate": 0.5555555555555556
+    },
+    "where": {
+      "samples": 6,
+      "exact_lexical_matches": 4,
+      "exact_lexical_match_rate": 0.6666666666666666
+    },
+    "with": {
+      "samples": 2,
+      "exact_lexical_matches": 2,
+      "exact_lexical_match_rate": 1.0
+    }
+  },
+  "static_feature_gaps": {
+    "cypher_shaped_non_matches": 4,
+    "omitted_reference_features": {
+      "aggregation": 1,
+      "relationship_pattern": 1
+    },
+    "introduced_features": {
+      "aggregation": 1,
+      "ordering": 1,
+      "pagination": 1,
+      "property_filter": 1,
+      "where": 1
+    }
+  },
+  "execution_confusion_matrix": {
+    "samples": 9,
+    "execution_evaluated_samples": 0,
+    "definition": "True positives are lexical exact matches or execution matches. True negatives are non-exact lexical matches without an execution match. False positives and false negatives are unavailable because the artifact has no independent ground-truth semantic-equivalence label. A null execution_match is treated as not execution-matched.",
+    "categories": {
+      "true_positives": {
+        "count": 5,
+        "examples": [
+          {
+            "instance_id": "instance_id_13430",
+            "question": "Which nodes are connected to UpdateDate where update_date is 2008-01-29, and also to another node?",
+            "reference_cypher": "MATCH (a:UpdateDate{update_date:'2008-01-29'})-[r]->(n), (n)-[s]->(m) RETURN labels(n) AS Interim, labels(m) AS Target",
+            "predicted_cypher": "MATCH (a:UpdateDate{update_date:'2008-01-29'})-[r]->(n), (n)-[s]->(m) RETURN labels(n) AS Interim, labels(m) AS Target",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "exact_lexical_match",
+            "lexical_overlap": null,
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return"
+            ],
+            "predicted_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 20
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_19093",
+            "question": "Fetch the distinct values of the report_id from Report where either report_no is none provided or report_id is not null!",
+            "reference_cypher": "MATCH (n:Report) WHERE n.report_no = 'none provided' OR n.report_id IS NOT NULL RETURN DISTINCT n.report_id AS report_id",
+            "predicted_cypher": "MATCH (n:Report) WHERE n.report_no = 'none provided' OR n.report_id IS NOT NULL RETURN DISTINCT n.report_id AS report_id",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "exact_lexical_match",
+            "lexical_overlap": null,
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "distinct",
+              "match",
+              "node_label",
+              "property_filter",
+              "return",
+              "where"
+            ],
+            "predicted_features": [
+              "distinct",
+              "match",
+              "node_label",
+              "property_filter",
+              "return",
+              "where"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 11
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_19443",
+            "question": "Find the title and the comments for those Article where title starts with O!",
+            "reference_cypher": "MATCH (n:Article) WHERE n.title STARTS WITH 'O' RETURN n.title AS title, n.comments AS comments",
+            "predicted_cypher": "MATCH (n:Article) WHERE n.title STARTS WITH 'O' RETURN n.title AS title, n.comments AS comments",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "exact_lexical_match",
+            "lexical_overlap": null,
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "match",
+              "node_label",
+              "return",
+              "where",
+              "with"
+            ],
+            "predicted_features": [
+              "match",
+              "node_label",
+              "return",
+              "where",
+              "with"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 11
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_30446",
+            "question": "List the labels of users with an area less than 2 and a size greater than 1.",
+            "reference_cypher": "MATCH (u:User) WHERE u.area < 2 AND u.size > 1 RETURN u.label",
+            "predicted_cypher": "MATCH (u:User) WHERE u.area < 2 AND u.size > 1 RETURN u.label",
+            "database_reference_alias": "neo4jlabs_demo_db_bluesky",
+            "error": null,
+            "outcome": "exact_lexical_match",
+            "lexical_overlap": null,
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "return",
+              "where"
+            ],
+            "predicted_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "return",
+              "where"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 11
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_7043",
+            "question": "Search for the article_id values from 20 Article that are linked to Journal via PUBLISHED_IN with pages = 537-560, and return article_id along with the respective Journal counts!",
+            "reference_cypher": "MATCH (n:Article) -[r:PUBLISHED_IN]->(m:Journal) WHERE r.pages='537-560' WITH DISTINCT n, m RETURN n.article_id AS article_id, count(m) AS count LIMIT 20",
+            "predicted_cypher": "MATCH (n:Article) -[r:PUBLISHED_IN]->(m:Journal) WHERE r.pages='537-560' WITH DISTINCT n, m RETURN n.article_id AS article_id, count(m) AS count LIMIT 20",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "exact_lexical_match",
+            "lexical_overlap": null,
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "aggregation",
+              "distinct",
+              "match",
+              "node_label",
+              "pagination",
+              "property_filter",
+              "relationship_pattern",
+              "return",
+              "where",
+              "with"
+            ],
+            "predicted_features": [
+              "aggregation",
+              "distinct",
+              "match",
+              "node_label",
+              "pagination",
+              "property_filter",
+              "relationship_pattern",
+              "return",
+              "where",
+              "with"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 19
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          }
+        ]
+      },
+      "true_negatives": {
+        "count": 4,
+        "examples": [
+          {
+            "instance_id": "instance_id_3190",
+            "question": "What are the names and ages of editors?",
+            "reference_cypher": "MATCH (e:Editor) RETURN e.Name, e.Age",
+            "predicted_cypher": "MATCH (e:Editor) RETURN e.Name AS Editor_Name, e.Age AS Editor_Age",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "cypher_shaped_non_match",
+            "lexical_overlap": "high_overlap",
+            "token_f1": 0.8750000000000001,
+            "execution_match": null,
+            "reference_features": [
+              "match",
+              "node_label",
+              "return"
+            ],
+            "predicted_features": [
+              "match",
+              "node_label",
+              "return"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 0.8181818181818182,
+              "recall": 1.0,
+              "shared": 9
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_36940",
+            "question": "Identify streams that have moderators who are also VIPs.",
+            "reference_cypher": "MATCH (s:Stream)<-[:MODERATOR]-(m:User)-[:VIP]->(s) RETURN s.name AS stream, m.name AS moderator_and_vip",
+            "predicted_cypher": "MATCH (s:Stream)-[:MODERATOR]->(m:VIP) WHERE m.name =~'^[vip]->(:Stream)' RETURN s",
+            "database_reference_alias": "neo4jlabs_demo_db_twitch",
+            "error": null,
+            "outcome": "cypher_shaped_non_match",
+            "lexical_overlap": "high_overlap",
+            "token_f1": 0.8108108108108107,
+            "execution_match": null,
+            "reference_features": [
+              "match",
+              "node_label",
+              "relationship_pattern",
+              "return"
+            ],
+            "predicted_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return",
+              "where"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [
+              "property_filter",
+              "where"
+            ],
+            "identifier_overlap": {
+              "precision": 0.9333333333333333,
+              "recall": 0.7777777777777778,
+              "shared": 14
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_33953",
+            "question": "Find the streams that were created before 2018 and have more than 5,000 followers.",
+            "reference_cypher": "MATCH (s:Stream) WHERE s.createdAt < datetime('2018-01-01T00:00:00.000000Z') AND s.followers > 5000 RETURN s",
+            "predicted_cypher": "MATCH (s:Stream) WHERE s.createdAt < datetime('2018-01-01T00:00:00Z') AND s.followers > 5000 RETURN s.name AS stream_name, count(s) AS stream_count ORDER BY stream_count DESC LIMIT 1",
+            "database_reference_alias": "neo4jlabs_demo_db_twitch",
+            "error": null,
+            "outcome": "cypher_shaped_non_match",
+            "lexical_overlap": "high_overlap",
+            "token_f1": 0.7710843373493975,
+            "execution_match": null,
+            "reference_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "return",
+              "where"
+            ],
+            "predicted_features": [
+              "aggregation",
+              "match",
+              "node_label",
+              "ordering",
+              "pagination",
+              "property_filter",
+              "return",
+              "where"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [
+              "aggregation",
+              "ordering",
+              "pagination"
+            ],
+            "identifier_overlap": {
+              "precision": 0.7,
+              "recall": 0.9333333333333333,
+              "shared": 14
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_26310",
+            "question": "What are the top 5 tags used in questions with a score less than zero?",
+            "reference_cypher": "MATCH (q:Question)-[:TAGGED]->(t:Tag) WHERE q.score < 0 RETURN t.name, count(q) AS usage ORDER BY usage DESC LIMIT 5",
+            "predicted_cypher": "MATCH (q:Question) WHERE q.score < 0 RETURN q.name, q.tag ORDER BY q.score DESC LIMIT 5",
+            "database_reference_alias": "neo4jlabs_demo_db_buzzoverflow",
+            "error": null,
+            "outcome": "cypher_shaped_non_match",
+            "lexical_overlap": "high_overlap",
+            "token_f1": 0.6666666666666667,
+            "execution_match": null,
+            "reference_features": [
+              "aggregation",
+              "match",
+              "node_label",
+              "ordering",
+              "pagination",
+              "property_filter",
+              "relationship_pattern",
+              "return",
+              "where"
+            ],
+            "predicted_features": [
+              "match",
+              "node_label",
+              "ordering",
+              "pagination",
+              "property_filter",
+              "return",
+              "where"
+            ],
+            "omitted_reference_features": [
+              "aggregation",
+              "relationship_pattern"
+            ],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 0.6,
+              "shared": 12
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          }
+        ]
+      },
+      "false_positives": {
+        "count": 0,
+        "examples": []
+      },
+      "false_negatives": {
+        "count": 0,
+        "examples": []
+      }
+    }
+  },
+  "examples": {
+    "complex_exact_matches": [
+      {
+        "instance_id": "instance_id_7043",
+        "question": "Search for the article_id values from 20 Article that are linked to Journal via PUBLISHED_IN with pages = 537-560, and return article_id along with the respective Journal counts!",
+        "reference_cypher": "MATCH (n:Article) -[r:PUBLISHED_IN]->(m:Journal) WHERE r.pages='537-560' WITH DISTINCT n, m RETURN n.article_id AS article_id, count(m) AS count LIMIT 20",
+        "predicted_cypher": "MATCH (n:Article) -[r:PUBLISHED_IN]->(m:Journal) WHERE r.pages='537-560' WITH DISTINCT n, m RETURN n.article_id AS article_id, count(m) AS count LIMIT 20",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "exact_lexical_match",
+        "lexical_overlap": null,
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "aggregation",
+          "distinct",
+          "match",
+          "node_label",
+          "pagination",
+          "property_filter",
+          "relationship_pattern",
+          "return",
+          "where",
+          "with"
+        ],
+        "predicted_features": [
+          "aggregation",
+          "distinct",
+          "match",
+          "node_label",
+          "pagination",
+          "property_filter",
+          "relationship_pattern",
+          "return",
+          "where",
+          "with"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 19
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_19093",
+        "question": "Fetch the distinct values of the report_id from Report where either report_no is none provided or report_id is not null!",
+        "reference_cypher": "MATCH (n:Report) WHERE n.report_no = 'none provided' OR n.report_id IS NOT NULL RETURN DISTINCT n.report_id AS report_id",
+        "predicted_cypher": "MATCH (n:Report) WHERE n.report_no = 'none provided' OR n.report_id IS NOT NULL RETURN DISTINCT n.report_id AS report_id",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "exact_lexical_match",
+        "lexical_overlap": null,
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "distinct",
+          "match",
+          "node_label",
+          "property_filter",
+          "return",
+          "where"
+        ],
+        "predicted_features": [
+          "distinct",
+          "match",
+          "node_label",
+          "property_filter",
+          "return",
+          "where"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 11
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_13430",
+        "question": "Which nodes are connected to UpdateDate where update_date is 2008-01-29, and also to another node?",
+        "reference_cypher": "MATCH (a:UpdateDate{update_date:'2008-01-29'})-[r]->(n), (n)-[s]->(m) RETURN labels(n) AS Interim, labels(m) AS Target",
+        "predicted_cypher": "MATCH (a:UpdateDate{update_date:'2008-01-29'})-[r]->(n), (n)-[s]->(m) RETURN labels(n) AS Interim, labels(m) AS Target",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "exact_lexical_match",
+        "lexical_overlap": null,
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return"
+        ],
+        "predicted_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 20
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_19443",
+        "question": "Find the title and the comments for those Article where title starts with O!",
+        "reference_cypher": "MATCH (n:Article) WHERE n.title STARTS WITH 'O' RETURN n.title AS title, n.comments AS comments",
+        "predicted_cypher": "MATCH (n:Article) WHERE n.title STARTS WITH 'O' RETURN n.title AS title, n.comments AS comments",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "exact_lexical_match",
+        "lexical_overlap": null,
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "match",
+          "node_label",
+          "return",
+          "where",
+          "with"
+        ],
+        "predicted_features": [
+          "match",
+          "node_label",
+          "return",
+          "where",
+          "with"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 11
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_30446",
+        "question": "List the labels of users with an area less than 2 and a size greater than 1.",
+        "reference_cypher": "MATCH (u:User) WHERE u.area < 2 AND u.size > 1 RETURN u.label",
+        "predicted_cypher": "MATCH (u:User) WHERE u.area < 2 AND u.size > 1 RETURN u.label",
+        "database_reference_alias": "neo4jlabs_demo_db_bluesky",
+        "error": null,
+        "outcome": "exact_lexical_match",
+        "lexical_overlap": null,
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "return",
+          "where"
+        ],
+        "predicted_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "return",
+          "where"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 11
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      }
+    ],
+    "closest_cypher_non_matches": [
+      {
+        "instance_id": "instance_id_3190",
+        "question": "What are the names and ages of editors?",
+        "reference_cypher": "MATCH (e:Editor) RETURN e.Name, e.Age",
+        "predicted_cypher": "MATCH (e:Editor) RETURN e.Name AS Editor_Name, e.Age AS Editor_Age",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "cypher_shaped_non_match",
+        "lexical_overlap": "high_overlap",
+        "token_f1": 0.8750000000000001,
+        "execution_match": null,
+        "reference_features": [
+          "match",
+          "node_label",
+          "return"
+        ],
+        "predicted_features": [
+          "match",
+          "node_label",
+          "return"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 0.8181818181818182,
+          "recall": 1.0,
+          "shared": 9
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_36940",
+        "question": "Identify streams that have moderators who are also VIPs.",
+        "reference_cypher": "MATCH (s:Stream)<-[:MODERATOR]-(m:User)-[:VIP]->(s) RETURN s.name AS stream, m.name AS moderator_and_vip",
+        "predicted_cypher": "MATCH (s:Stream)-[:MODERATOR]->(m:VIP) WHERE m.name =~'^[vip]->(:Stream)' RETURN s",
+        "database_reference_alias": "neo4jlabs_demo_db_twitch",
+        "error": null,
+        "outcome": "cypher_shaped_non_match",
+        "lexical_overlap": "high_overlap",
+        "token_f1": 0.8108108108108107,
+        "execution_match": null,
+        "reference_features": [
+          "match",
+          "node_label",
+          "relationship_pattern",
+          "return"
+        ],
+        "predicted_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return",
+          "where"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [
+          "property_filter",
+          "where"
+        ],
+        "identifier_overlap": {
+          "precision": 0.9333333333333333,
+          "recall": 0.7777777777777778,
+          "shared": 14
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_33953",
+        "question": "Find the streams that were created before 2018 and have more than 5,000 followers.",
+        "reference_cypher": "MATCH (s:Stream) WHERE s.createdAt < datetime('2018-01-01T00:00:00.000000Z') AND s.followers > 5000 RETURN s",
+        "predicted_cypher": "MATCH (s:Stream) WHERE s.createdAt < datetime('2018-01-01T00:00:00Z') AND s.followers > 5000 RETURN s.name AS stream_name, count(s) AS stream_count ORDER BY stream_count DESC LIMIT 1",
+        "database_reference_alias": "neo4jlabs_demo_db_twitch",
+        "error": null,
+        "outcome": "cypher_shaped_non_match",
+        "lexical_overlap": "high_overlap",
+        "token_f1": 0.7710843373493975,
+        "execution_match": null,
+        "reference_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "return",
+          "where"
+        ],
+        "predicted_features": [
+          "aggregation",
+          "match",
+          "node_label",
+          "ordering",
+          "pagination",
+          "property_filter",
+          "return",
+          "where"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [
+          "aggregation",
+          "ordering",
+          "pagination"
+        ],
+        "identifier_overlap": {
+          "precision": 0.7,
+          "recall": 0.9333333333333333,
+          "shared": 14
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_26310",
+        "question": "What are the top 5 tags used in questions with a score less than zero?",
+        "reference_cypher": "MATCH (q:Question)-[:TAGGED]->(t:Tag) WHERE q.score < 0 RETURN t.name, count(q) AS usage ORDER BY usage DESC LIMIT 5",
+        "predicted_cypher": "MATCH (q:Question) WHERE q.score < 0 RETURN q.name, q.tag ORDER BY q.score DESC LIMIT 5",
+        "database_reference_alias": "neo4jlabs_demo_db_buzzoverflow",
+        "error": null,
+        "outcome": "cypher_shaped_non_match",
+        "lexical_overlap": "high_overlap",
+        "token_f1": 0.6666666666666667,
+        "execution_match": null,
+        "reference_features": [
+          "aggregation",
+          "match",
+          "node_label",
+          "ordering",
+          "pagination",
+          "property_filter",
+          "relationship_pattern",
+          "return",
+          "where"
+        ],
+        "predicted_features": [
+          "match",
+          "node_label",
+          "ordering",
+          "pagination",
+          "property_filter",
+          "return",
+          "where"
+        ],
+        "omitted_reference_features": [
+          "aggregation",
+          "relationship_pattern"
+        ],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "shared": 12
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "Exact match and token overlap are lexical metrics, not semantic or execution equivalence.",
+    "Feature extraction uses conservative regular-expression rules, not a Cypher parser.",
+    "A non-exact result can still be semantically valid; this report does not determine that."
+  ]
+}

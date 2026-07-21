@@ -1,0 +1,1172 @@
+{
+  "metadata": {
+    "source_results": "outputs/runs/without-syntax-check/evaluation/trained_results.jsonl",
+    "num_samples": 50,
+    "analysis_scope": "offline lexical and static analysis; no Cypher parsing or execution equivalence"
+  },
+  "outcomes": {
+    "cypher_shaped_non_match": {
+      "count": 36,
+      "rate": 0.72
+    },
+    "exact_lexical_match": {
+      "count": 14,
+      "rate": 0.28
+    }
+  },
+  "lexical_overlap": {
+    "high_overlap": {
+      "count": 34,
+      "rate": 0.9444444444444444
+    },
+    "low_overlap": {
+      "count": 2,
+      "rate": 0.05555555555555555
+    }
+  },
+  "error_types": {},
+  "by_database_reference_alias": {
+    "<unset>": {
+      "samples": 32,
+      "exact_lexical_matches": 13,
+      "exact_lexical_match_rate": 0.40625,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 19,
+          "rate": 0.59375
+        },
+        "exact_lexical_match": {
+          "count": 13,
+          "rate": 0.40625
+        }
+      }
+    },
+    "neo4jlabs_demo_db_bluesky": {
+      "samples": 1,
+      "exact_lexical_matches": 1,
+      "exact_lexical_match_rate": 1.0,
+      "outcomes": {
+        "exact_lexical_match": {
+          "count": 1,
+          "rate": 1.0
+        }
+      }
+    },
+    "neo4jlabs_demo_db_buzzoverflow": {
+      "samples": 3,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 3,
+          "rate": 1.0
+        }
+      }
+    },
+    "neo4jlabs_demo_db_gameofthrones": {
+      "samples": 2,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 2,
+          "rate": 1.0
+        }
+      }
+    },
+    "neo4jlabs_demo_db_movies": {
+      "samples": 3,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 3,
+          "rate": 1.0
+        }
+      }
+    },
+    "neo4jlabs_demo_db_twitch": {
+      "samples": 9,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 9,
+          "rate": 1.0
+        }
+      }
+    }
+  },
+  "by_reference_complexity": {
+    "3": {
+      "samples": 1,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 1,
+          "rate": 1.0
+        }
+      }
+    },
+    "4": {
+      "samples": 7,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 7,
+          "rate": 1.0
+        }
+      }
+    },
+    "5": {
+      "samples": 11,
+      "exact_lexical_matches": 4,
+      "exact_lexical_match_rate": 0.36363636363636365,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 7,
+          "rate": 0.6363636363636364
+        },
+        "exact_lexical_match": {
+          "count": 4,
+          "rate": 0.36363636363636365
+        }
+      }
+    },
+    "6": {
+      "samples": 15,
+      "exact_lexical_matches": 9,
+      "exact_lexical_match_rate": 0.6,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 6,
+          "rate": 0.4
+        },
+        "exact_lexical_match": {
+          "count": 9,
+          "rate": 0.6
+        }
+      }
+    },
+    "7": {
+      "samples": 4,
+      "exact_lexical_matches": 1,
+      "exact_lexical_match_rate": 0.25,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 3,
+          "rate": 0.75
+        },
+        "exact_lexical_match": {
+          "count": 1,
+          "rate": 0.25
+        }
+      }
+    },
+    "8": {
+      "samples": 4,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 4,
+          "rate": 1.0
+        }
+      }
+    },
+    "9": {
+      "samples": 5,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 5,
+          "rate": 1.0
+        }
+      }
+    },
+    "10": {
+      "samples": 3,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0,
+      "outcomes": {
+        "cypher_shaped_non_match": {
+          "count": 3,
+          "rate": 1.0
+        }
+      }
+    }
+  },
+  "reference_feature_success": {
+    "aggregation": {
+      "samples": 18,
+      "exact_lexical_matches": 4,
+      "exact_lexical_match_rate": 0.2222222222222222
+    },
+    "distinct": {
+      "samples": 10,
+      "exact_lexical_matches": 3,
+      "exact_lexical_match_rate": 0.3
+    },
+    "match": {
+      "samples": 50,
+      "exact_lexical_matches": 14,
+      "exact_lexical_match_rate": 0.28
+    },
+    "node_label": {
+      "samples": 50,
+      "exact_lexical_matches": 14,
+      "exact_lexical_match_rate": 0.28
+    },
+    "ordering": {
+      "samples": 9,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0
+    },
+    "pagination": {
+      "samples": 10,
+      "exact_lexical_matches": 0,
+      "exact_lexical_match_rate": 0.0
+    },
+    "property_filter": {
+      "samples": 38,
+      "exact_lexical_matches": 13,
+      "exact_lexical_match_rate": 0.34210526315789475
+    },
+    "relationship_pattern": {
+      "samples": 37,
+      "exact_lexical_matches": 10,
+      "exact_lexical_match_rate": 0.2702702702702703
+    },
+    "return": {
+      "samples": 50,
+      "exact_lexical_matches": 14,
+      "exact_lexical_match_rate": 0.28
+    },
+    "where": {
+      "samples": 27,
+      "exact_lexical_matches": 8,
+      "exact_lexical_match_rate": 0.2962962962962963
+    },
+    "with": {
+      "samples": 12,
+      "exact_lexical_matches": 1,
+      "exact_lexical_match_rate": 0.08333333333333333
+    }
+  },
+  "static_feature_gaps": {
+    "cypher_shaped_non_matches": 36,
+    "omitted_reference_features": {
+      "aggregation": 2,
+      "distinct": 4,
+      "ordering": 1,
+      "pagination": 2,
+      "relationship_pattern": 5,
+      "where": 3,
+      "with": 2
+    },
+    "introduced_features": {
+      "distinct": 1,
+      "property_filter": 2,
+      "relationship_pattern": 3,
+      "where": 7,
+      "with": 2
+    }
+  },
+  "execution_confusion_matrix": {
+    "samples": 50,
+    "execution_evaluated_samples": 3,
+    "definition": "True positives are lexical exact matches or execution matches. True negatives are non-exact lexical matches without an execution match. False positives and false negatives are unavailable because the artifact has no independent ground-truth semantic-equivalence label. A null execution_match is treated as not execution-matched.",
+    "categories": {
+      "true_positives": {
+        "count": 15,
+        "examples": [
+          {
+            "instance_id": "instance_id_11856",
+            "question": "List the types of relationships and their counts connected to Article for which article_id is 1071!",
+            "reference_cypher": "MATCH (a:Article{article_id:'1071'})-[r]->() RETURN TYPE(r) AS Relations, COUNT(r) AS Counts",
+            "predicted_cypher": "MATCH (a:Article{article_id:'1071'})-[r]->() RETURN TYPE(r) AS Relations, COUNT(r) AS Counts",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "exact_lexical_match",
+            "lexical_overlap": null,
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "aggregation",
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return"
+            ],
+            "predicted_features": [
+              "aggregation",
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 18
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_12057",
+            "question": "List the types of relationships and their counts connected to Article for which comments is Published by Geometry and Topology at\n  http://www.maths.warwick.ac.uk/gt/GTVol4/paper14.abs.html!",
+            "reference_cypher": "MATCH (a:Article{comments:'Published by Geometry and Topology at   http://www.maths.warwick.ac.uk/gt/GTVol4/paper14.abs.html'})-[r]->() RETURN TYPE(r) AS Relations, COUNT(r) AS Counts",
+            "predicted_cypher": "MATCH (a:Article{comments:'Published by Geometry and Topology at   http://www.maths.warwick.ac.uk/gt/GTVol4/paper14.abs.html'})-[r]->() RETURN TYPE(r) AS Relations, COUNT(r) AS Counts",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "exact_lexical_match",
+            "lexical_overlap": null,
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "aggregation",
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return"
+            ],
+            "predicted_features": [
+              "aggregation",
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 35
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_12334",
+            "question": "Enumerate the properties of nodes that are either directly or indirectly connected to Author for which last_name is Mason!",
+            "reference_cypher": "MATCH (a:Author{last_name:'Mason'})-[*]->(n) RETURN DISTINCT properties(n) AS Properties",
+            "predicted_cypher": "MATCH (a:Author{last_name:'Mason'})-[*]->(n) RETURN DISTINCT properties(n) AS Properties",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "exact_lexical_match",
+            "lexical_overlap": null,
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "distinct",
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return"
+            ],
+            "predicted_features": [
+              "distinct",
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 16
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_12826",
+            "question": "List the distinct properties of nodes that are 2 hops away from Report with report_no equal to PAM-780!",
+            "reference_cypher": "MATCH (a:Report{report_no:'PAM-780'})-[*2]->(n) RETURN DISTINCT properties(n) AS props",
+            "predicted_cypher": "MATCH (a:Report{report_no:'PAM-780'})-[*2]->(n) RETURN DISTINCT properties(n) AS props",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "exact_lexical_match",
+            "lexical_overlap": null,
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "distinct",
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return"
+            ],
+            "predicted_features": [
+              "distinct",
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 17
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_16927",
+            "question": "Are there any nodes that are connected with Article where title is Free Field Construction for the ABF Models in Regime II and share a common property with UpdateDate, for which update_date equals 2008-01-29?",
+            "reference_cypher": "MATCH (a:Article{title:'Free Field Construction for the ABF Models in Regime II'})-[r]->(n), (d:UpdateDate{update_date:'2008-01-29'}) WHERE ANY(key in keys(n) WHERE n[key] = d[key]) RETURN n",
+            "predicted_cypher": "MATCH (a:Article{title:'Free Field Construction for the ABF Models in Regime II'})-[r]->(n), (d:UpdateDate{update_date:'2008-01-29'}) WHERE ANY(key in keys(n) WHERE n[key] = d[key]) RETURN n",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "exact_lexical_match",
+            "lexical_overlap": null,
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return",
+              "where"
+            ],
+            "predicted_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return",
+              "where"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 31
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          }
+        ]
+      },
+      "true_negatives": {
+        "count": 35,
+        "examples": [
+          {
+            "instance_id": "instance_id_14109",
+            "question": "Find the Article for which comments is 21 pages, AMS-LaTeX!",
+            "reference_cypher": "MATCH (n:Article {comments:'21 pages, AMS-LaTeX'}) RETURN n",
+            "predicted_cypher": "MATCH (n:Article {comments: '21 pages, AMS-LaTeX'}) RETURN n",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "cypher_shaped_non_match",
+            "lexical_overlap": "high_overlap",
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "return"
+            ],
+            "predicted_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "return"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 13
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_43324",
+            "question": "Which streams have the most distinct games played? List the top 5.",
+            "reference_cypher": "MATCH (s:Stream)-[:PLAYS]->(g:Game) WITH s, COUNT(DISTINCT g) AS distinctGames ORDER BY distinctGames DESC LIMIT 5 RETURN s.name AS streamName, distinctGames",
+            "predicted_cypher": "MATCH (s:Stream)-[:PLAYS]->(g:Game) WITH s, count(DISTINCT g) AS distinctGames ORDER BY distinctGames DESC LIMIT 5 RETURN s.name AS streamName, distinctGames",
+            "database_reference_alias": "neo4jlabs_demo_db_twitch",
+            "error": null,
+            "outcome": "cypher_shaped_non_match",
+            "lexical_overlap": "high_overlap",
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "aggregation",
+              "distinct",
+              "match",
+              "node_label",
+              "ordering",
+              "pagination",
+              "relationship_pattern",
+              "return",
+              "with"
+            ],
+            "predicted_features": [
+              "aggregation",
+              "distinct",
+              "match",
+              "node_label",
+              "ordering",
+              "pagination",
+              "relationship_pattern",
+              "return",
+              "with"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 19
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_9530",
+            "question": "Which nodes have a common property with Article where article_id is 2007 and are PUBLISHED_IN linked to a Journal?",
+            "reference_cypher": "MATCH (a:Article {article_id:'2007'})-[r:PUBLISHED_IN]->(b:Journal) WHERE ANY(key IN keys(a) WHERE a[key] = b[key]) RETURN b",
+            "predicted_cypher": "MATCH (a:Article{article_id:'2007'})-[r:PUBLISHED_IN]->(b:Journal) WHERE ANY(key IN keys(a) WHERE a[key] = b[key]) RETURN b",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "cypher_shaped_non_match",
+            "lexical_overlap": "high_overlap",
+            "token_f1": 1.0,
+            "execution_match": null,
+            "reference_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return",
+              "where"
+            ],
+            "predicted_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "relationship_pattern",
+              "return",
+              "where"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "shared": 20
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_15057",
+            "question": "How many unique relationships originate from Article where abstract is   The Wakimoto construction for the quantum affine algebra U_q(\\hat{sl}_2)\nadmits a reduction to the q-deformed parafermion algebras. We interpret the\nlatter theory as a free field realization of the Andrews-Baxter-Forrester\nmodels in regime II. We give multi-particle form factors of some local\noperators on the lattice and compute their scaling limit, where the models are\ndescribed by a massive field theory with Z_k symmetric minimal scattering\nmatrices.\n?",
+            "reference_cypher": "MATCH (a:Article{abstract:'  The Wakimoto construction for the quantum affine algebra U_q(\\hat{sl}_2) admits a reduction to the q-deformed parafermion algebras. We interpret the latter theory as a free field realization of the Andrews-Baxter-Forrester models in regime II. We give multi-particle form factors of some local operators on the lattice and compute their scaling limit, where the models are described by a massive field theory with Z_k symmetric minimal scattering matrices. '})-[r]->() RETURN COUNT(DISTINCT TYPE(r)) AS rels, TYPE(r)",
+            "predicted_cypher": "MATCH (a:Article{abstract:'  The Wakimoto construction for the quantum affine algebra U_q(\\hat{sl}_2) admits a reduction to the q-deformed parafermion algebras. We interpret the latter theory as a free field realization of the Andrews-Baxter-Forrester models in regime II. We give multi-particle form factors of some local operators on the lattice and compute their scaling limit, where the models are described by a massive field theory with Z_k symmetric minimal scattering matrices. \"})-[r]->() RETURN count(DISTINCT r)",
+            "database_reference_alias": null,
+            "error": null,
+            "outcome": "cypher_shaped_non_match",
+            "lexical_overlap": "high_overlap",
+            "token_f1": 0.9565217391304348,
+            "execution_match": null,
+            "reference_features": [
+              "aggregation",
+              "distinct",
+              "match",
+              "node_label",
+              "pagination",
+              "property_filter",
+              "relationship_pattern",
+              "return",
+              "where",
+              "with"
+            ],
+            "predicted_features": [
+              "aggregation",
+              "distinct",
+              "match",
+              "node_label",
+              "pagination",
+              "property_filter",
+              "relationship_pattern",
+              "return",
+              "where",
+              "with"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 1.0,
+              "recall": 0.9714285714285714,
+              "shared": 68
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          },
+          {
+            "instance_id": "instance_id_22944",
+            "question": "Identify characters who belong to community 579.",
+            "reference_cypher": "MATCH (c:Character) WHERE c.community = 579 RETURN c",
+            "predicted_cypher": "MATCH (c:Character) WHERE c.community = 579 RETURN c.name",
+            "database_reference_alias": "neo4jlabs_demo_db_gameofthrones",
+            "error": null,
+            "outcome": "cypher_shaped_non_match",
+            "lexical_overlap": "high_overlap",
+            "token_f1": 0.9333333333333333,
+            "execution_match": null,
+            "reference_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "return",
+              "where"
+            ],
+            "predicted_features": [
+              "match",
+              "node_label",
+              "property_filter",
+              "return",
+              "where"
+            ],
+            "omitted_reference_features": [],
+            "introduced_features": [],
+            "identifier_overlap": {
+              "precision": 0.8888888888888888,
+              "recall": 1.0,
+              "shared": 8
+            },
+            "static_signals": {
+              "first_cypher_clause": "MATCH",
+              "has_markdown_fence": false,
+              "has_prose_prefix": false,
+              "has_sql_keywords": false,
+              "has_write_clause": false
+            }
+          }
+        ]
+      },
+      "false_positives": {
+        "count": 0,
+        "examples": []
+      },
+      "false_negatives": {
+        "count": 0,
+        "examples": []
+      }
+    }
+  },
+  "examples": {
+    "complex_exact_matches": [
+      {
+        "instance_id": "instance_id_8575",
+        "question": "Find comments of the Article and return it along with the count of Journal that are linked via PUBLISHED_IN where pages is 641-672!",
+        "reference_cypher": "MATCH (n:Article) -[r:PUBLISHED_IN]->(m:Journal) WHERE r.pages = '641-672' RETURN n.comments AS comments, count(m) AS count",
+        "predicted_cypher": "MATCH (n:Article) -[r:PUBLISHED_IN]->(m:Journal) WHERE r.pages = '641-672' RETURN n.comments AS comments, count(m) AS count",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "exact_lexical_match",
+        "lexical_overlap": null,
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "aggregation",
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return",
+          "where"
+        ],
+        "predicted_features": [
+          "aggregation",
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return",
+          "where"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 19
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_11856",
+        "question": "List the types of relationships and their counts connected to Article for which article_id is 1071!",
+        "reference_cypher": "MATCH (a:Article{article_id:'1071'})-[r]->() RETURN TYPE(r) AS Relations, COUNT(r) AS Counts",
+        "predicted_cypher": "MATCH (a:Article{article_id:'1071'})-[r]->() RETURN TYPE(r) AS Relations, COUNT(r) AS Counts",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "exact_lexical_match",
+        "lexical_overlap": null,
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "aggregation",
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return"
+        ],
+        "predicted_features": [
+          "aggregation",
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 18
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_12057",
+        "question": "List the types of relationships and their counts connected to Article for which comments is Published by Geometry and Topology at\n  http://www.maths.warwick.ac.uk/gt/GTVol4/paper14.abs.html!",
+        "reference_cypher": "MATCH (a:Article{comments:'Published by Geometry and Topology at   http://www.maths.warwick.ac.uk/gt/GTVol4/paper14.abs.html'})-[r]->() RETURN TYPE(r) AS Relations, COUNT(r) AS Counts",
+        "predicted_cypher": "MATCH (a:Article{comments:'Published by Geometry and Topology at   http://www.maths.warwick.ac.uk/gt/GTVol4/paper14.abs.html'})-[r]->() RETURN TYPE(r) AS Relations, COUNT(r) AS Counts",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "exact_lexical_match",
+        "lexical_overlap": null,
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "aggregation",
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return"
+        ],
+        "predicted_features": [
+          "aggregation",
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 35
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_12334",
+        "question": "Enumerate the properties of nodes that are either directly or indirectly connected to Author for which last_name is Mason!",
+        "reference_cypher": "MATCH (a:Author{last_name:'Mason'})-[*]->(n) RETURN DISTINCT properties(n) AS Properties",
+        "predicted_cypher": "MATCH (a:Author{last_name:'Mason'})-[*]->(n) RETURN DISTINCT properties(n) AS Properties",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "exact_lexical_match",
+        "lexical_overlap": null,
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "distinct",
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return"
+        ],
+        "predicted_features": [
+          "distinct",
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 16
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_12826",
+        "question": "List the distinct properties of nodes that are 2 hops away from Report with report_no equal to PAM-780!",
+        "reference_cypher": "MATCH (a:Report{report_no:'PAM-780'})-[*2]->(n) RETURN DISTINCT properties(n) AS props",
+        "predicted_cypher": "MATCH (a:Report{report_no:'PAM-780'})-[*2]->(n) RETURN DISTINCT properties(n) AS props",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "exact_lexical_match",
+        "lexical_overlap": null,
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "distinct",
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return"
+        ],
+        "predicted_features": [
+          "distinct",
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 17
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      }
+    ],
+    "closest_cypher_non_matches": [
+      {
+        "instance_id": "instance_id_43324",
+        "question": "Which streams have the most distinct games played? List the top 5.",
+        "reference_cypher": "MATCH (s:Stream)-[:PLAYS]->(g:Game) WITH s, COUNT(DISTINCT g) AS distinctGames ORDER BY distinctGames DESC LIMIT 5 RETURN s.name AS streamName, distinctGames",
+        "predicted_cypher": "MATCH (s:Stream)-[:PLAYS]->(g:Game) WITH s, count(DISTINCT g) AS distinctGames ORDER BY distinctGames DESC LIMIT 5 RETURN s.name AS streamName, distinctGames",
+        "database_reference_alias": "neo4jlabs_demo_db_twitch",
+        "error": null,
+        "outcome": "cypher_shaped_non_match",
+        "lexical_overlap": "high_overlap",
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "aggregation",
+          "distinct",
+          "match",
+          "node_label",
+          "ordering",
+          "pagination",
+          "relationship_pattern",
+          "return",
+          "with"
+        ],
+        "predicted_features": [
+          "aggregation",
+          "distinct",
+          "match",
+          "node_label",
+          "ordering",
+          "pagination",
+          "relationship_pattern",
+          "return",
+          "with"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 19
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_9530",
+        "question": "Which nodes have a common property with Article where article_id is 2007 and are PUBLISHED_IN linked to a Journal?",
+        "reference_cypher": "MATCH (a:Article {article_id:'2007'})-[r:PUBLISHED_IN]->(b:Journal) WHERE ANY(key IN keys(a) WHERE a[key] = b[key]) RETURN b",
+        "predicted_cypher": "MATCH (a:Article{article_id:'2007'})-[r:PUBLISHED_IN]->(b:Journal) WHERE ANY(key IN keys(a) WHERE a[key] = b[key]) RETURN b",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "cypher_shaped_non_match",
+        "lexical_overlap": "high_overlap",
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return",
+          "where"
+        ],
+        "predicted_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "relationship_pattern",
+          "return",
+          "where"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 20
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_14109",
+        "question": "Find the Article for which comments is 21 pages, AMS-LaTeX!",
+        "reference_cypher": "MATCH (n:Article {comments:'21 pages, AMS-LaTeX'}) RETURN n",
+        "predicted_cypher": "MATCH (n:Article {comments: '21 pages, AMS-LaTeX'}) RETURN n",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "cypher_shaped_non_match",
+        "lexical_overlap": "high_overlap",
+        "token_f1": 1.0,
+        "execution_match": null,
+        "reference_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "return"
+        ],
+        "predicted_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "return"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "shared": 13
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_15057",
+        "question": "How many unique relationships originate from Article where abstract is   The Wakimoto construction for the quantum affine algebra U_q(\\hat{sl}_2)\nadmits a reduction to the q-deformed parafermion algebras. We interpret the\nlatter theory as a free field realization of the Andrews-Baxter-Forrester\nmodels in regime II. We give multi-particle form factors of some local\noperators on the lattice and compute their scaling limit, where the models are\ndescribed by a massive field theory with Z_k symmetric minimal scattering\nmatrices.\n?",
+        "reference_cypher": "MATCH (a:Article{abstract:'  The Wakimoto construction for the quantum affine algebra U_q(\\hat{sl}_2) admits a reduction to the q-deformed parafermion algebras. We interpret the latter theory as a free field realization of the Andrews-Baxter-Forrester models in regime II. We give multi-particle form factors of some local operators on the lattice and compute their scaling limit, where the models are described by a massive field theory with Z_k symmetric minimal scattering matrices. '})-[r]->() RETURN COUNT(DISTINCT TYPE(r)) AS rels, TYPE(r)",
+        "predicted_cypher": "MATCH (a:Article{abstract:'  The Wakimoto construction for the quantum affine algebra U_q(\\hat{sl}_2) admits a reduction to the q-deformed parafermion algebras. We interpret the latter theory as a free field realization of the Andrews-Baxter-Forrester models in regime II. We give multi-particle form factors of some local operators on the lattice and compute their scaling limit, where the models are described by a massive field theory with Z_k symmetric minimal scattering matrices. \"})-[r]->() RETURN count(DISTINCT r)",
+        "database_reference_alias": null,
+        "error": null,
+        "outcome": "cypher_shaped_non_match",
+        "lexical_overlap": "high_overlap",
+        "token_f1": 0.9565217391304348,
+        "execution_match": null,
+        "reference_features": [
+          "aggregation",
+          "distinct",
+          "match",
+          "node_label",
+          "pagination",
+          "property_filter",
+          "relationship_pattern",
+          "return",
+          "where",
+          "with"
+        ],
+        "predicted_features": [
+          "aggregation",
+          "distinct",
+          "match",
+          "node_label",
+          "pagination",
+          "property_filter",
+          "relationship_pattern",
+          "return",
+          "where",
+          "with"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 1.0,
+          "recall": 0.9714285714285714,
+          "shared": 68
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      },
+      {
+        "instance_id": "instance_id_22944",
+        "question": "Identify characters who belong to community 579.",
+        "reference_cypher": "MATCH (c:Character) WHERE c.community = 579 RETURN c",
+        "predicted_cypher": "MATCH (c:Character) WHERE c.community = 579 RETURN c.name",
+        "database_reference_alias": "neo4jlabs_demo_db_gameofthrones",
+        "error": null,
+        "outcome": "cypher_shaped_non_match",
+        "lexical_overlap": "high_overlap",
+        "token_f1": 0.9333333333333333,
+        "execution_match": null,
+        "reference_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "return",
+          "where"
+        ],
+        "predicted_features": [
+          "match",
+          "node_label",
+          "property_filter",
+          "return",
+          "where"
+        ],
+        "omitted_reference_features": [],
+        "introduced_features": [],
+        "identifier_overlap": {
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "shared": 8
+        },
+        "static_signals": {
+          "first_cypher_clause": "MATCH",
+          "has_markdown_fence": false,
+          "has_prose_prefix": false,
+          "has_sql_keywords": false,
+          "has_write_clause": false
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "Exact match and token overlap are lexical metrics, not semantic or execution equivalence.",
+    "Feature extraction uses conservative regular-expression rules, not a Cypher parser.",
+    "A non-exact result can still be semantically valid; this report does not determine that."
+  ]
+}

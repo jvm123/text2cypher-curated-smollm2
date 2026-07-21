@@ -8,6 +8,7 @@ A modular CPU training and evaluation pipeline that fine-tunes `HuggingFaceTB/Sm
 - [Reproducible workflow](#reproducible-workflow)
 - [Artifacts and metrics](#artifacts-and-metrics)
 - [Evaluation-result analysis implementation](#evaluation-result-analysis)
+- [Benchmark comparison](outputs/runs/comparisons/all_runs_comparison.md)
 - [Manual evaluation](RESULT_ANALYSIS.md)
 - [Configuration](#configuration)
 - [Neo4j](#neo4j)

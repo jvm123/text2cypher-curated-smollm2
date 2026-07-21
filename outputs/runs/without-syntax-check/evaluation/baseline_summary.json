@@ -1,0 +1,18 @@
+{
+  "label": "baseline",
+  "split": "test",
+  "database_reference_alias": "any",
+  "limit": null,
+  "num_samples": 50,
+  "generation": {
+    "max_new_tokens": 256,
+    "do_sample": false
+  },
+  "metrics": {
+    "exact_match": 0.0,
+    "token_precision": 0.12902364226362287,
+    "token_recall": 0.348562818638994,
+    "token_f1": 0.17317457674419334
+  },
+  "failed_generations": 0
+}

@@ -1,0 +1,149 @@
+{
+  "runs": {
+    "with-syntax-check (baseline)": {
+      "samples": 50,
+      "failed_generations": 0,
+      "metrics": {
+        "exact_match": 0.0,
+        "token_precision": 0.12902364226362287,
+        "token_recall": 0.348562818638994,
+        "token_f1": 0.17317457674419334
+      }
+    },
+    "with-syntax-check (trained)": {
+      "samples": 50,
+      "failed_generations": 0,
+      "metrics": {
+        "exact_match": 0.44,
+        "token_precision": 0.9151587563007217,
+        "token_recall": 0.9210768255546047,
+        "token_f1": 0.9114670309044519
+      }
+    },
+    "without-syntax-check (baseline)": {
+      "samples": 50,
+      "failed_generations": 0,
+      "metrics": {
+        "exact_match": 0.0,
+        "token_precision": 0.12902364226362287,
+        "token_recall": 0.348562818638994,
+        "token_f1": 0.17317457674419334
+      }
+    },
+    "without-syntax-check (trained)": {
+      "samples": 50,
+      "failed_generations": 0,
+      "metrics": {
+        "exact_match": 0.28,
+        "token_precision": 0.8494342174015058,
+        "token_recall": 0.8451723372002948,
+        "token_f1": 0.8273355444006937
+      }
+    }
+  },
+  "pairwise_comparisons": [
+    {
+      "left_run": "with-syntax-check (baseline)",
+      "right_run": "with-syntax-check (trained)",
+      "shared_samples": 50,
+      "only_left_samples": 0,
+      "only_right_samples": 0,
+      "right_minus_left_metrics": {
+        "exact_match": 0.44,
+        "token_precision": 0.7861351140370989,
+        "token_recall": 0.5725140069156107,
+        "token_f1": 0.7382924541602586
+      },
+      "exact_match_transitions": {
+        "non_match_to_match": 22,
+        "non_match_to_non_match": 28
+      }
+    },
+    {
+      "left_run": "with-syntax-check (baseline)",
+      "right_run": "without-syntax-check (baseline)",
+      "shared_samples": 50,
+      "only_left_samples": 0,
+      "only_right_samples": 0,
+      "right_minus_left_metrics": {
+        "exact_match": 0.0,
+        "token_precision": 0.0,
+        "token_recall": 0.0,
+        "token_f1": 0.0
+      },
+      "exact_match_transitions": {
+        "non_match_to_non_match": 50
+      }
+    },
+    {
+      "left_run": "with-syntax-check (baseline)",
+      "right_run": "without-syntax-check (trained)",
+      "shared_samples": 50,
+      "only_left_samples": 0,
+      "only_right_samples": 0,
+      "right_minus_left_metrics": {
+        "exact_match": 0.28,
+        "token_precision": 0.7204105751378829,
+        "token_recall": 0.49660951856130076,
+        "token_f1": 0.6541609676565003
+      },
+      "exact_match_transitions": {
+        "non_match_to_match": 14,
+        "non_match_to_non_match": 36
+      }
+    },
+    {
+      "left_run": "with-syntax-check (trained)",
+      "right_run": "without-syntax-check (baseline)",
+      "shared_samples": 50,
+      "only_left_samples": 0,
+      "only_right_samples": 0,
+      "right_minus_left_metrics": {
+        "exact_match": -0.44,
+        "token_precision": -0.7861351140370989,
+        "token_recall": -0.5725140069156107,
+        "token_f1": -0.7382924541602586
+      },
+      "exact_match_transitions": {
+        "match_to_non_match": 22,
+        "non_match_to_non_match": 28
+      }
+    },
+    {
+      "left_run": "with-syntax-check (trained)",
+      "right_run": "without-syntax-check (trained)",
+      "shared_samples": 50,
+      "only_left_samples": 0,
+      "only_right_samples": 0,
+      "right_minus_left_metrics": {
+        "exact_match": -0.16,
+        "token_precision": -0.06572453889921596,
+        "token_recall": -0.07590448835430995,
+        "token_f1": -0.0841314865037581
+      },
+      "exact_match_transitions": {
+        "match_to_match": 13,
+        "match_to_non_match": 9,
+        "non_match_to_match": 1,
+        "non_match_to_non_match": 27
+      }
+    },
+    {
+      "left_run": "without-syntax-check (baseline)",
+      "right_run": "without-syntax-check (trained)",
+      "shared_samples": 50,
+      "only_left_samples": 0,
+      "only_right_samples": 0,
+      "right_minus_left_metrics": {
+        "exact_match": 0.28,
+        "token_precision": 0.7204105751378829,
+        "token_recall": 0.49660951856130076,
+        "token_f1": 0.6541609676565003
+      },
+      "exact_match_transitions": {
+        "non_match_to_match": 14,
+        "non_match_to_non_match": 36
+      }
+    }
+  ]
+}
